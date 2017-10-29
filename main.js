@@ -49,6 +49,7 @@ $(document).ready(function(){
     });
 
     $('.learnButton').click(function(){
+        $('.resultText').replaceWith("<p class='resultText'>Learning.. .</p>");                
         for(var i = 0; i < 10; i++){
             perceptrons[i].learn();
         }
